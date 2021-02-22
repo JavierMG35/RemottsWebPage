@@ -1,0 +1,157 @@
+body {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Referente al header*/
+
+header {
+    top: 1%;
+    left: 1%;
+    right: 1%;
+    height: 70px;
+	width: auto;
+    display: flex;
+    align-items: center;
+}
+
+header * {
+    display: inline;
+}
+
+header nav{
+	width: 100%;
+}
+
+header img {
+	margin-top: 2%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+header li {
+	margin: 7%;
+}
+
+header li a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.barra {
+    border-right: 3px solid white;
+	padding: 1%;
+}
+
+#opciones {
+	margin-top: 1%;
+	max-width: 70px;
+    max-height: 70px;
+	background-color:  rgba(128, 128, 128, 0.90);
+	border-radius: 25px;
+}
+
+
+/* Referente al body */
+
+.cuerpo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.libros {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+    flex-direction: row;
+	padding:0;
+    margin-top: 5%;
+    margin-bottom: 10px;
+	margin-left: 0;
+	margin-right: 0;
+    font-size: large;
+	width:100%;
+	height:auto;
+}
+
+.libros img {
+	max-width: 350px;
+    max-height: 350px;
+}
+
+/* Referente al footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+	margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+	bottom: 0%;
+	height: 35px;
+    justify-content: space-between;
+    padding: 1%;
+    border: solid;
+    background-color: rgba(255, 255, 255, 0.95);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: large;
+}
+
+footer nav img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+
+/*CONSIDERACIONES PLATAFORMAS*/
+
+
+/*Modo tablet*/
+@media only screen and (max-width: 768px) {
+
+    #fotoUsuario{
+        display: none;
+    }
+
+    .barra {
+        border-right: unset;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+}
+/*Modo móvil*/
+@media only screen and (max-width:600px) {
+
+    .cuerpo {
+        flex-direction: column;
+    }
+
+    footer nav img {
+        max-width: 35px;
+        max-height: 35px;
+    }
+
+    footer nav {
+        align-content: center;
+    }
+
+    #instagram{
+        display:none;
+    }
+
+    #facebook{
+        display:none;
+    }
+ 
+}
